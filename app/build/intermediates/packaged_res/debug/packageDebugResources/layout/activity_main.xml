@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+            
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Production Supervisor"
+                android:textColor="@color/text_light"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+                
+            <Button
+                android:id="@+id/btnExportPdf"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Export PDF"
+                android:textSize="12sp"
+                android:backgroundTint="@color/accent_lime"
+                android:textColor="@color/bg_dark"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- KPI Grid -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:baselineAligned="false"
+            android:layout_marginBottom="16dp">
+
+            <!-- Prod Card -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/glass_background"
+                android:padding="12dp"
+                android:layout_marginEnd="8dp">
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Production"
+                    android:textColor="@color/text_muted"
+                    android:textSize="12sp"
+                    android:textAllCaps="true" />
+                
+                <TextView
+                    android:id="@+id/tvProduction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/text_light"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Downtime Card -->
+             <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/glass_background"
+                android:padding="12dp"
+                android:layout_marginEnd="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Downtime"
+                    android:textColor="@color/text_muted"
+                    android:textSize="12sp"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/tvDowntime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0m"
+                    android:textColor="#F43F5E"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Efficiency Card -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/glass_background"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Efficiency"
+                    android:textColor="@color/text_muted"
+                    android:textSize="12sp"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/tvEfficiency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0%"
+                    android:textColor="@color/accent_lime"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Input Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/glass_background"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+                
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Data Input"
+                    android:textColor="@color/primary_blue"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                    
+                 <Button
+                    android:id="@+id/btnMockData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="MOCK"
+                    android:textSize="10sp"
+                    android:backgroundTint="#33ffffff"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:textColor="@color/accent_lime"
+                    android:layout_marginEnd="8dp"/>
+                    
+                <Button
+                    android:id="@+id/btnUploadCsv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload CSV"
+                    android:backgroundTint="@color/primary_blue"
+                    android:textColor="@color/bg_dark"
+                    android:textStyle="bold"
+                    app:icon="@android:drawable/ic_menu_upload"
+                    app:iconTint="@color/bg_dark"/>
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Production Count"
+                android:textColorHint="@color/text_muted"
+                app:boxStrokeColor="@color/primary_blue"
+                app:hintTextColor="@color/primary_blue"
+                android:layout_marginBottom="8dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etProdCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="@color/text_light" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Downtime (Minutes)"
+                android:textColorHint="@color/text_muted"
+                app:boxStrokeColor="@color/primary_blue"
+                app:hintTextColor="@color/primary_blue"
+                android:layout_marginBottom="16dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDowntime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="@color/text_light" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnAnalyze"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Analyze Data"
+                android:backgroundTint="@color/primary_blue"
+                android:textColor="@color/bg_dark"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        
+        <!-- "Chart" Visualizer Placeholder -->
+        <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Production Trend"
+             android:textColor="@color/text_muted"
+             android:layout_marginBottom="8dp"/>
+             
+        <com.example.smartfactory.SimpleLineChart
+            android:id="@+id/chartView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/glass_background"
+            android:padding="16dp" />
+
+    </LinearLayout>
+</ScrollView>

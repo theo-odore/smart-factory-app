@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent_lime">#a3e635</color>
+    <color name="bg_dark">#0f172a</color>
+    <color name="black">#FF000000</color>
+    <color name="card_bg">#B31e293b</color>
+    <color name="primary_blue">#38bdf8</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="text_light">#f1f5f9</color>
+    <color name="text_muted">#94a3b8</color>
+    <color name="white">#FFFFFFFF</color>
+    <style name="GlassCard">
+        <item name="cardBackgroundColor">@android:color/transparent</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardCornerRadius">16dp</item>
+    </style>
+    <style name="Theme.SmartFactory" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryVariant">@color/bg_dark</item>
+        <item name="colorOnPrimary">@color/bg_dark</item>
+        <item name="colorSecondary">@color/accent_lime</item>
+        <item name="colorOnSecondary">@color/bg_dark</item>
+        <item name="android:statusBarColor">@color/bg_dark</item>
+    </style>
+</resources>

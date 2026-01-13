@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SmartFactory" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryVariant">@color/bg_dark</item>
+        <item name="colorOnPrimary">@color/bg_dark</item>
+        <item name="colorSecondary">@color/accent_lime</item>
+        <item name="colorOnSecondary">@color/bg_dark</item>
+        <item name="android:statusBarColor">@color/bg_dark</item>
+    </style>
+    
+    <style name="GlassCard">
+        <item name="cardBackgroundColor">@android:color/transparent</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardCornerRadius">16dp</item>
+    </style>
+</resources>

@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.example.smartfactory.app-debug-28:/layout_activity_main.xml.flat",
+        "source": "com.example.smartfactory.app-main-30:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\8.5\\com.example.smartfactory.app-debug-28:\\drawable_glass_background.xml.flat",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\8.5\\com.example.smartfactory.app-main-30:\\drawable\\glass_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\8.5\\com.example.smartfactory.app-debug-28:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\8.5\\com.example.smartfactory.app-main-30:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\8.5\\com.example.smartfactory.app-debug-28:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\8.5\\com.example.smartfactory.app-main-30:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\.gradle\\daemon\\8.5\\com.example.smartfactory.app-debug-28:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\tirth\\.gradle\\daemon\\8.5\\com.example.smartfactory.app-main-30:\\xml\\data_extraction_rules.xml"
+    }
+]
